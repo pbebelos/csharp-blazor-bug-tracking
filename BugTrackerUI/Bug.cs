@@ -14,6 +14,7 @@ namespace BugTrackerUI
         public string Title { get; set; }
 
         [Required]
+        [MinLength(10)]
         public string Description { get; set; }
 
         [Range(1, 5)]
